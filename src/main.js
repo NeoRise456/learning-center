@@ -29,9 +29,10 @@ import Drawer from "primevue/drawer";
 import Toast from "primevue/toast";
 import Tag from "primevue/tag";
 import Toolbar from "primevue/toolbar";
+import i18n from "./i18n.js";
 
 const app = createApp(App);
-app.use(PrimeVue, { ripple: true ,theme: 'aura' });
+app.use(PrimeVue, { ripple: true ,theme: Aura });
 
 app.use(ConfirmationService)
     .use(DialogService)
@@ -57,5 +58,7 @@ app.component('pv-button', Button)
     .component('pv-toast', Toast)
     .component('pv-tag', Tag)
     .component('pv-toolbar', Toolbar);
+
+app.use(i18n);
 
 app.mount('#app');
