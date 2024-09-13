@@ -31,6 +31,7 @@ import Tag from "primevue/tag";
 import Toolbar from "primevue/toolbar";
 import i18n from "./i18n.js";
 import router from "./router/index.js";
+import SelectButton from "primevue/selectbutton";
 
 const app = createApp(App);
 app.use(PrimeVue, { ripple: true ,theme: Aura });
@@ -47,6 +48,7 @@ app.component('pv-button', Button)
     .component('pv-data-table', DataTable)
     .component('pv-dialog', Dialog)
     .component('pv-select' , Select)
+    .component('pv-select-button', SelectButton)
     .component('pv-input-text', InputText)
     .component('pv-file-upload', FileUpload)
     .component('pv-float-label', FloatLabel)
