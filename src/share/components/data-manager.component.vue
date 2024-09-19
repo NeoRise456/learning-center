@@ -1,16 +1,10 @@
 <script>
 
-import {FilterMatchMode} from '@primevue/core/api'
-import PvColumn from "../../main.js";
-import {c} from "vite/dist/node/types.d-aGj9QkWt.js";
+import {FilterMatchMode} from '@primevue/core/api';
+
+
 export default {
   name: "data-manager",
-  computed: {
-    c() {
-      return c
-    }
-  },
-  components: {PvColumn},
   inheritAttrs: false,
   props: {
     items: {
